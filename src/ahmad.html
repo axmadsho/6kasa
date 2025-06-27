@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+
+<header class="bg-white shadow">
+    <div class="max-w-[1200px] mx-auto px-4 py-4 flex items-center justify-between">
+
+      <a href="#" class="text-2xl font-bold text-red-600">CREATEX</a>
+  
+
+      <nav class="hidden lg:flex items-center gap-8 text-gray-700 font-medium">
+        <a href="#" class="hover:text-red-600">About Us</a>
+        <a href="#" class="hover:text-red-600">Courses</a>
+        <a href="#" class="hover:text-red-600">Events</a>
+        <a href="#" class="hover:text-red-600 font-semibold">Blog</a>
+        <a href="#" class="hover:text-red-600">Contacts</a>
+      </nav>
+  
+
+      <div class="hidden lg:flex items-center gap-4">
+        <a href="#" class="text-gray-600 hover:underline">Login / Register</a>
+        <a href="#" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">Get consultation</a>
+      </div>
+  
+
+      <button id="menu-btn" class="lg:hidden focus:outline-none">
+        <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="lg:hidden hidden flex-col gap-3 px-4 pb-4">
+      <a href="#" class="block py-2 border-b">About Us</a>
+      <a href="#" class="block py-2 border-b">Courses</a>
+      <a href="#" class="block py-2 border-b">Events</a>
+      <a href="#" class="block py-2 border-b font-semibold text-red-600">Blog</a>
+      <a href="#" class="block py-2 border-b">Contacts</a>
+      <a href="#" class="block py-2">Login / Register</a>
+      <a href="#" class="block bg-red-600 text-white px-4 py-2 rounded mt-2">Get consultation</a>
+    </div>
+  
+    <script>
+      document.getElementById('menu-btn').addEventListener('click', () => {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+      });
+    </script>
+  </header>
+
+<section class="max-w-[1200px] mx-auto px-4 pt-10 pb-20 flex flex-col lg:flex-row gap-10">
+
+
+    <article class="w-full lg:w-[70%] flex flex-col gap-6">
+      <div class="flex items-center gap-4 text-sm text-gray-400">
+        <span>Article</span>
+        <span class="text-red-500 font-semibold">HR & Recruiting</span>
+      </div>
+      <h1 class="text-[24px] sm:text-[30px] md:text-[40px] font-bold leading-tight">
+        HR statistics: job search, interviews, hiring and recruiting
+      </h1>
+      <div class="flex items-center text-sm text-gray-500 gap-6">
+        <span>August 3, 2020</span>
+        <span>•</span>
+        <span>4 min read</span>
+        <div class="ml-auto flex gap-3">
+          <span>Share:</span>
+          <img src="/socials.png" alt="">
+        </div>
+      </div>
+      <img src="/image (7).png" alt="" class="w-full rounded-lg">
+  
+      <p class="text-gray-700 text-base leading-relaxed">
+        Voluptate vitae pellentesque scelerisque luctus consequat mattis pellentesque dui odio. Interdum aenean est malesuada ornare sed gravida rhoncus, congue. Purus auctor nullam diam quis est hendrerit ac euismod.
+      </p>
+  
+      <p class="text-gray-700 text-base leading-relaxed">
+        Aaficilisi sapien est eget nunc senectus non pulvinar. Tortor senectus ac netus eget, vitae diam cras dignissim. Varius adipiscing eget diam nisi. Orci, consectetur vulputate metus ornare pharetra, neque. Fermentum. Vel nec rhoncus, non nunc, neque in massa. Faucibus enim nam tellus amet orci, et. Mi varius viverra risus vel.
+      </p>
+  
+      <blockquote class="bg-gray-100 border-l-4 border-red-500 pl-4 py-4 italic text-gray-800">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in tot euismod vulputate etiam eros. Vel accumsan et elit neque, ipsum.
+      </blockquote>
+  
+      <ul class="list-disc pl-6 text-gray-700">
+        <li>Afermentum in morbi pretium aliquam adipiscing donec tempus.</li>
+        <li>Vulputate placerat amet pulvinar lorem nisl.</li>
+        <li>Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
+        <li>Etiam duis lobortis in fames ultrices commodo nibh.</li>
+      </ul>
+  
+      <p class="text-gray-700 text-base leading-relaxed">
+        Erim, vel massa odio diam. Blandit massa augue gravida feugiat elementum nec sed. Nisi in ornare lectus eget. Urna, risus, consectetur volutpat lorem purus. Vulputate id vitae neque massa nec. Consectetur neque aliquam eros, purus enim dignissim aenean vitae. Ultrices fames augue mattis tortor est justo, pharetra nibh risus. Facilisi ac porttitor volutpat natoque proin amet, nulla. Vivamus ut lobortis sagittis curabitur tellus convallis eget netus vitae.
+      </p>
+    </article>
+  
+    <aside class="w-full lg:w-[30%] flex flex-col gap-10">
+      <div>
+        <input type="text" placeholder="Search blog..." class="w-full border border-gray-300 py-2 px-3 rounded">
+      </div>
+  
+      <div class="bg-gray-100 p-4 rounded">
+        <h2 class="font-bold text-xl mb-2">Author</h2>
+        <div class="flex flex-col items-center gap-2">
+          <img src="/i1.png" alt="" class="w-16 h-16 rounded-full">
+          <p class="font-semibold">Kristin Watson</p>
+          <p class="text-sm text-gray-500">Curator of Marketing Course</p>
+          <div class="flex gap-3">
+            <img src="/socials 1.png" alt="">
+          </div>
+        </div>
+      </div>
+  
+      <div class="flex flex-col gap-4 items-center">
+        <h2 class="font-bold text-xl">Trending Articles</h2>
+        <div class="flex gap-3 items-start">
+          <img src="/image.jpg" class="w-12 h-12" alt="">
+          <div>
+            <p class="text-sm text-gray-500">September 4, 2020</p>
+            <p class="font-semibold text-sm">What is traffic arbitrage and does it really make money?</p>
+          </div>
+        </div>
+        <div class="flex gap-3 items-start">
+          <img src="/image 1.jpg" class="w-12 h-12" alt="">
+          <div>
+            <p class="text-sm text-gray-500">July 15, 2020</p>
+            <p class="font-semibold text-sm text-red-500">Startup: how to build a team that will live longer than your</p>
+          </div>
+        </div>
+        <div class="flex gap-3 items-start">
+          <img src="/image 2.jpg" class="w-12 h-12" alt="">
+          <div>
+            <p class="text-sm text-gray-500">August 2, 2020</p>
+            <p class="font-semibold text-sm">What to do if you want to get feedback on the product</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="flex flex-wrap gap-2 mt-5">
+        <span class="bg-gray-200 px-3 py-1 text-sm rounded">#marketing</span>
+        <span class="bg-gray-200 px-3 py-1 text-sm rounded">#recruiting</span>
+        <span class="bg-red-200 text-red-600 px-3 py-1 text-sm rounded">#coding</span>
+        <span class="bg-gray-200 px-3 py-1 text-sm rounded">#planning</span>
+        <span class="bg-gray-200 px-3 py-1 text-sm rounded">#HR</span>
+        <span class="bg-gray-200 px-3 py-1 text-sm rounded">#self-development</span>
+      </div>
+    </aside>
+  </section>
+  <div class="max-w-[1200px] m-auto pl-[20px] flex justify-between">
+    <img src="/tags (1).png" alt="">
+    <img src="/sharing.png" alt="">
+  </div>
+    
+</body>
+</html>
